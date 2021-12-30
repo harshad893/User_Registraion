@@ -1,0 +1,27 @@
+{% extends 'dummy.html' %}
+
+{% block title %}
+    <title>Registration Page</title>
+{% endblock %}
+
+
+
+{% block body_block %}
+<center>
+    <div class="container">
+        <div class='jumbotron jumbotron-fluid'>
+                <h1>Registration Form</h1>
+                <form method="POST">
+                    {% csrf_token %}
+
+                        {{UF.as_p}}
+                        {{PF.as_p}}
+
+                    <input type="submit" value="Register" class='btn btn-primary'>
+                </form>
+        </div>
+    </div>
+</center>
+{% endblock %}
+    
+    
