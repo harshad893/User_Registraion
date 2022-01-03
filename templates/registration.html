@@ -11,7 +11,7 @@
     <div class="container">
         <div class='jumbotron jumbotron-fluid'>
                 <h1>Registration Form</h1>
-                <form method="POST">
+                <form method="POST" enctype="multipart/form-data">
                     {% csrf_token %}
 
                         {{UF.as_p}}
