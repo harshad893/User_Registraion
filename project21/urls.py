@@ -22,6 +22,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('home/',home,name='home'),
     path('registration/',registration,name='registration'),
+    path('userlogin/',userlogin,name='userlogin'),
+    path('user_logout/',user_logout,name='user_logout'),
+    path('profile_details/',profile_details,name='profile_details'),
+    path('change_password/',change_password,name='change_password'),
 
 
 
